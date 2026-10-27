@@ -47,7 +47,7 @@
 /* ── MAIN CONTENT ── */
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body{background:var(--pale);color:var(--ink);font-family:'Public Sans',-apple-system,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh;overflow-x:hidden;-webkit-user-select:none;-moz-user-select:none;user-select:none;}
+body{background:var(--pale);color:var(--ink);font-family:'Public Sans',-apple-system,sans-serif;-webkit-font-smoothing:antialiased;min-height:100dvh;overflow-x:hidden;-webkit-user-select:none;-moz-user-select:none;user-select:none;}
 .display{font-family:'Fraunces',serif;}
 .bg-scene{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;}
 .bg-scene::before,.bg-scene::after{content:"";position:absolute;border-radius:50%;filter:blur(70px);opacity:.22;}
@@ -126,8 +126,8 @@ header p.sub{color:var(--ink-soft);font-size:14px;line-height:1.6;margin:0 auto;
 .cat-card.active .cat-name,.cat-card.active .cat-count{color:#e0d8c4;}
 .cat-card.active i{color:var(--accent-soft);transform:scale(1.15);}
 main{max-width:1180px;margin:0 auto;padding:28px 24px 40px;display:grid;grid-template-columns:264px 1fr;gap:24px;align-items:start;}
-@media(max-width:900px){main{grid-template-columns:1fr;}}
-.rail{position:sticky;top:14px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:6px;box-shadow:var(--shadow);max-height:calc(100vh - 28px);overflow-y:auto;scrollbar-width:thin;}
+@media(max-width:900px){main{grid-template-columns:1fr; padding-bottom: 80px;}}
+.rail{position:sticky;top:14px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:6px;box-shadow:var(--shadow);max-height:calc(100dvh - 35px);overflow-y:auto;scrollbar-width:thin; padding-bottom: 24px;}
 @media(max-width:900px){.rail{position:relative;top:0;max-height:none;}}
 .rail-group-label{font-size:9.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--mid);font-weight:700;padding:12px 10px 5px;display:flex;align-items:center;gap:6px;}
 .rail-group-label::after{content:"";flex:1;height:1px;background:var(--line);}
